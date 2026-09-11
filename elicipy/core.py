@@ -403,16 +403,6 @@ def read_questionnaire(input_dir, csv_file, seed, target):
         label_flag = False
 
     df_read = pd.read_csv(input_dir + "/" + csv_file, header=0)
-
-    # UNITS is optional for dimensionless quantities. Pandas reads empty CSV
-    # cells as NaN by default; normalize the whole column here so that all
-    # downstream code (plots, tables, labels, etc.) always receives strings.
-    if "UNITS" in df_read.columns:
-        df_read["UNITS"] = (df_read["UNITS"]
-                            .fillna("")
-                            .astype(str)
-                            .str.strip())
-
     # print(df_read)
 
     quest_type = df_read["QUEST_TYPE"].to_list()
