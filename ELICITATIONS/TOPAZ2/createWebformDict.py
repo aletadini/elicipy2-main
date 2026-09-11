@@ -3,11 +3,11 @@ password_protected = False
 
 # select 'github', 'local' or 'local_github'
 # datarepo = 'local'
-datarepo = 'local_github'
+datarepo = 'github'
 
 # Github repository for answers, used only when datarepo='github'
 # or 'local_github'
-RepositoryData = 'ANSWERS_ELICIPY2'
+RepositoryData = 'TOPAZ2Webform'
 
 # Parameters used only when datarepo='local' or 'local_github'
 user = 'aletadini'
