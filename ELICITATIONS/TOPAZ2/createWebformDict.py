@@ -14,7 +14,7 @@ user = 'aletadini'
 github_token = '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'
 
 # this can be 'seed' or 'target'
-quest_type = 'seed'
+quest_type = 'target'
 
 #group_list = [
 #    'SG1 (Clermont)', 'SG2 (Quito)', 'SG3 (Geol.)', 'SG4 (MathMod)',
